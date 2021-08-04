@@ -1,0 +1,40 @@
+@import "../../../styles/main.scss";
+
+.container{
+    @include flex-row-center();
+    width: 220px;
+    height:60px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.icon__container{
+    @include flex-column-center();
+    background-color:$Robins-Egg-Blue;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    color:$White;
+    position: absolute;
+    left:0%;
+    z-index: -1;
+
+
+}
+.bg__container{
+    background-color:$Robins-Egg-Blue;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    color:$White;
+    position: absolute;
+    left:0%;
+    z-index: -1;
+}
+.title__container{
+    @include button-sm();
+    @include flex-row-end();
+    padding:0 1em;
+    width: 100%;
+  
+}
