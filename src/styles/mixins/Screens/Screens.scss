@@ -1,0 +1,15 @@
+@mixin display-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(auto,1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+
+}
+
+
+@mixin small{
+    @media (min-width: 768px){
+
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/main.scss";
+
+.container{
+    @include flex-row-center-space-around();
+    width: 150px;
+    height: 60px;
+
+
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius:50px;
+    background:$Bright-Turquoise;
+}

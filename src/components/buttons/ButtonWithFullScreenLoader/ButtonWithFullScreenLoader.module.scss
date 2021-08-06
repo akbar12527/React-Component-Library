@@ -1,0 +1,54 @@
+@import "../../../styles/main.scss";
+
+.container{
+    @include flex-row-center();
+    width: 150px;
+    height:60px;
+    position: relative;
+    cursor: pointer;
+    // background-color:lightblue;
+    overflow:hidden;
+    
+}
+.overlayContainer__container{
+    @include button-sm();
+    @include flex-column-center();
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:$Yellow-Orange;
+    left:-100%;
+    overflow: hidden;
+    
+    
+}
+
+.bg__container{
+    background-color:$Yellow-Orange;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    color:$White;
+    position: absolute;
+    left:0%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.bg__container_fullOpacity{
+    background-color:$Yellow-Orange;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    color:$White;
+    position: absolute;
+    left:0%;
+    z-index: -1;
+    opacity: 0;
+}
+.title__container{
+    @include button-sm();
+    @include flex-row-center-space-between();
+    padding:0 1em;
+    width: 100%;
+  
+}

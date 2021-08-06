@@ -20,3 +20,14 @@
     justify-content: flex-start;
     align-items: center;
 }
+@mixin flex-row-center-space-around{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+@mixin flex-row-center-space-between{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}

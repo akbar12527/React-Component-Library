@@ -1,0 +1,22 @@
+@import "../../../styles/main.scss";
+
+.container{
+    @include flex-row-center-space-around();
+    height:60px;
+    width:150px;
+}
+.dot,.dotFluid{
+    @include flex-row-center();
+    width: 20px;
+    height: 20px;
+    border-radius:50px;
+    background:$Bright-Turquoise;
+    position: relative;
+
+
+}
+.dotFluid{
+    position: absolute;
+    height:15px;
+    width:15px;
+}
